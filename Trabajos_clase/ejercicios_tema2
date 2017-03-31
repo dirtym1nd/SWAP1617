@@ -1,0 +1,43 @@
+T2.2
+
+·Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad:
+
+  - https://msdn.microsoft.com/en-us/library/aa560207.aspx
+
+  - https://www.ibm.com/support/knowledgecenter/SSAW57_8.5.5/com.ibm.websphere.nd.doc/ae/crun_ha_hamanager.html
+
+  - https://docs.oracle.com/cd/E19787-01/820-4676/cacfifdd/index.html
+
+
+T2.3
+
+·¿Cómo analizar el nivel de carga de cada uno de los susbistemas en el servidor?
+
+  - Munin
+
+  - Gnome-System-Monitor
+
+  - Zabbix
+
+
+T2.4
+
+·Buscar ejemplos de balanceadores software y hardware(productos comerciales):
+
+  - Balanceadores de carga software: HAProxy, NGINX...
+
+  - Balanceadores de carga hardware: 
+
+·Buscar productos comerciales para servidores de aplicaciones:
+
+  - Base4 Server
+
+  - JBoss AS
+
+  - WebLogic
+
+·Buscar productos comerciales para servidores de almacenamiento:
+
+  - http://www.dell.com/es/empresas/p/dell-compellent
+
+  - http://www-03.ibm.com/systems/es/storage/
