@@ -1,0 +1,22 @@
+ ___
+|   | Para copiar un archivo por ssh, por ejemplo, desde la máquina 2
+| 1 | a la 1, usamos: rsync -avz -e ssh ipmáquina1:directorioOrigen/archivo 
+|___| directorioDestino/
+
+ ___
+|   | El clonado es igual que la copia de archivos. Desde la máquina 2 a la 1,
+| 2 | rsync -avz -e ssh ipmáquina1:directorioOrigen directorioDestino
+|___|
+
+
+ ___
+|   | En los ejemplos anteriores nos pedirá contraseña. Para evitarlo
+| 3 | generamos una clave en la máquina 2, por ejemplo, con ssh-keygen -b 4096 -t rsa.
+|___| A continuación, copiamos la clave a la máquina 1 con ssh-copy-id ipmáquina1.
+
+
+ ___
+|   | Si queremos mantener actualizado el contenido de la máquina 2 con el de
+| 4 | la máquina 1, abrimos el archivo crontab con un editor: sudo nano /etc/crontab
+|___| 00 *    * * *   rafanaya rsync -avz --delete -e ssh 192.168.158.128:/var/www/ /var/www/
+      Si quisiéramos, podríamos añadir más opciones, como excluir fichero de errores.
