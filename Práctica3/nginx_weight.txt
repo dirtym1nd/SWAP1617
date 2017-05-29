@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.158.130 (be patient)
+
+
+Server Software:        nginx/1.10.0
+Server Hostname:        192.168.158.130
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        11321 bytes
+
+Concurrency Level:      10
+Time taken for tests:   1.021 seconds
+Complete requests:      1000
+Failed requests:        333
+   (Connect: 0, Receive: 0, Length: 333, Exceptions: 0)
+Total transferred:      7832432 bytes
+HTML transferred:       7568756 bytes
+Requests per second:    979.00 [#/sec] (mean)
+Time per request:       10.214 [ms] (mean)
+Time per request:       1.021 [ms] (mean, across all concurrent requests)
+Transfer rate:          7488.27 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       2
+Processing:     4   10   1.5     10      19
+Waiting:        4    9   1.5      9      19
+Total:          4   10   1.6     10      20
+
+Percentage of the requests served within a certain time (ms)
+  50%     10
+  66%     11
+  75%     11
+  80%     11
+  90%     12
+  95%     13
+  98%     13
+  99%     14
+ 100%     20 (longest request)
